@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sitio narrado del curso</title>
+<meta name="description" content="Proyecto final Vibe Coding CEDIA 2026 · VC-2026-021">
+<style>
+:root{--bg:#F4F3FB;--card:#FFFFFF;--ink:#1F2430;--muted:#5A6170;--accent:#5B4BDB;--teal:#0D9488;--gold:#FFC629;--night:#0B1020;--line:#DDDAF0;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1020;--card:#151B30;--ink:#E9EAF3;--muted:#A9AEC4;--accent:#A99FFF;--teal:#4FD1C5;--line:#2A3150}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 Calibri,Carlito,system-ui,sans-serif}
+header{background:var(--night);color:#fff;padding:2.5rem 1rem 2rem}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1rem}
+h1{font-family:Georgia,serif;font-size:clamp(1.9rem,5vw,2.8rem);margin:.2rem 0 .4rem;line-height:1.15}
+h2{font-family:Georgia,serif;font-size:1.35rem;margin:0 0 .6rem}
+.k{color:var(--gold);font-weight:700;letter-spacing:.02em}
+.sub{color:#D7D9EA;max-width:44rem;margin:.3rem 0 1rem}
+.ai{font-style:italic;color:#C9CCE0;font-size:.95rem;margin:0}
+.lang{float:right;display:inline-flex;border:1px solid #fff;border-radius:6px;overflow:hidden}
+.lang button{font:inherit;font-weight:600;background:none;color:#fff;border:0;padding:.4rem .9rem;min-height:44px;cursor:pointer}
+.lang button[aria-pressed=true]{background:#fff;color:var(--night)}
+main{padding:2rem 0 3rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+@media (max-width:760px){.grid{grid-template-columns:minmax(0,1fr)}.lang{float:none;margin-bottom:1rem}}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:8px;padding:1.1rem}
+.card.t{border-top-color:var(--teal)}
+video{width:100%;height:auto;display:block;border-radius:6px;background:#000}
+ul{padding-left:1.2rem;margin:.3rem 0}
+li{margin:.3rem 0}
+a{color:var(--accent);text-underline-offset:.15em}
+.meta{color:var(--muted);font-size:.95rem}
+footer{border-top:1px solid var(--line);padding:1.2rem 0 2rem;color:var(--muted);font-size:.9rem}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-l="es" aria-pressed="true">Español</button>
+      <button type="button" data-l="en" aria-pressed="false">English</button>
+    </div>
+    <p class="k">Vibe Coding CEDIA 2026 · Universidad UTE · UTPL</p>
+    <h1 data-es="Sitio narrado del curso" data-en="Narrated course site">Sitio narrado del curso</h1>
+    <p class="sub" data-es="Una clase de diapositivas convertida en una lección que se escucha en español y en inglés, para la asignatura Toma de decisiones y comunicación estratégica en salud." data-en="A slide-based class turned into a lesson students can hear in Spanish and in English, for the course Decision-making and strategic communication in healthcare.">Una clase de diapositivas convertida en una lección que se escucha en español y en inglés, para la asignatura Toma de decisiones y comunicación estratégica en salud.</p>
+    <p><strong>Juan Pablo Arrobo · UTPL · VC-2026-021</strong></p>
+    <p class="ai" data-es="Narración generada con voz de IA (ElevenLabs) y revisada por los autores." data-en="Narration generated with an AI voice (ElevenLabs) and reviewed by the authors.">Narración generada con voz de IA (ElevenLabs) y revisada por los autores.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="grid">
+    <section class="card" aria-labelledby="v-es">
+      <h2 id="v-es">Video · Español</h2>
+      <video controls preload="metadata" src="VC-2026-021_ProyectoFinal_ES.mp4" aria-labelledby="v-es"></video>
+      <p class="meta">4:58 · <a href="VC-2026-021_ProyectoFinal_ES.mp4" download data-es="Descargar" data-en="Download">Descargar</a></p>
+    </section>
+    <section class="card t" aria-labelledby="v-en">
+      <h2 id="v-en">Video · English</h2>
+      <video controls preload="metadata" src="VC-2026-021_ProyectoFinal_EN.mp4" aria-labelledby="v-en"></video>
+      <p class="meta">4:40 · <a href="VC-2026-021_ProyectoFinal_EN.mp4" download data-es="Descargar" data-en="Download">Descargar</a></p>
+    </section>
+    <section class="card">
+      <h2 data-es="Presentaciones y nota" data-en="Slides and note">Presentaciones y nota</h2>
+      <ul>
+        <li><a href="VC-2026-021_ProyectoFinal_ES.pptx" data-es="Presentación en español (.pptx)" data-en="Spanish slides (.pptx)">Presentación en español (.pptx)</a></li>
+        <li><a href="VC-2026-021_ProyectoFinal_EN.pptx" data-es="Presentación en inglés (.pptx)" data-en="English slides (.pptx)">Presentación en inglés (.pptx)</a></li>
+        <li><a href="VC-2026-021_NotaMetodologica.pdf" data-es="Nota metodológica (PDF)" data-en="Methodological note (PDF, in Spanish)">Nota metodológica (PDF)</a> · <a href="VC-2026-021_NotaMetodologica.docx">.docx</a></li>
+      </ul>
+    </section>
+    <section class="card t">
+      <h2 data-es="La herramienta" data-en="The tool">La herramienta</h2>
+      <ul>
+        <li><a href="https://claude.ai/artifact/HtAaBUVm6Jyhrco22LPEc9" target="_blank" rel="noopener" data-es="Abrir el sitio del curso" data-en="Open the course site">Abrir el sitio del curso</a></li>
+        <li><a href="scorm/Leccion_Habilidades_comunicativas_ES_SCORM.zip" data-es="Lección SCORM en español (.zip)" data-en="SCORM lesson in Spanish (.zip)">Lección SCORM en español (.zip)</a></li>
+        <li><a href="scorm/Leccion_Habilidades_comunicativas_EN_SCORM.zip" data-es="Lección SCORM en inglés (.zip)" data-en="SCORM lesson in English (.zip)">Lección SCORM en inglés (.zip)</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap" data-es="Solo para uso educativo. Sin datos personales." data-en="For educational use only. No personal data.">Solo para uso educativo. Sin datos personales.</div></footer>
+<script>
+(function(){
+  function set(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-es]').forEach(function(n){n.textContent=n.getAttribute('data-'+l);});
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.l===l));});
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.l);});});
+})();
+</script>
+</body>
+</html>
